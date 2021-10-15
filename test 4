@@ -1,0 +1,8 @@
+quantity = int(input('Стартовое количество: '))
+percent = float(input('Среднесуточное увеличение: '))
+day = int(input('Количество дней для размножения: '))
+print('День', "Популяция")
+print('1    ', quantity)
+for i in range(2, day + 1):
+    quantity = (quantity * (percent / 100)) + quantity
+    print(i,'   ', round(quantity, 2))
